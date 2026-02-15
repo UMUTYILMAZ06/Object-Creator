@@ -1,5 +1,5 @@
 # Object-Creator
-https://github.com/UMUTYILMAZ06/Object-Creator/blob/main/videos/demo.mp4
+https://github.com/UMUTYILMAZ06/Object-Creator/issues/1
 
 ![Figure 1: RGB Composite Image](images/presentation_page-0001.jpg)
 ![Figure 2: RGB Composite Image](images/presentation_page-0002.jpg)
