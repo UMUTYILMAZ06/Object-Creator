@@ -1,0 +1,27 @@
+# Unity generated folders
+UnityPart/[Ll]ibrary/
+UnityPart/[Tt]emp/
+UnityPart/[Oo]bj/
+UnityPart/[Bb]uild/
+UnityPart/[Bb]uilds/
+UnityPart/[Ll]ogs/
+UnityPart/[Uu]serSettings/
+
+# IDE
+.vs/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python (venv/cache) - do not commit
+**/.venv/
+**/__pycache__/
+*.pyc
