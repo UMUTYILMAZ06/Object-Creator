@@ -1,0 +1,54 @@
+{
+  "chair": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "table": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "sofa": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "tv": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "lamp": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "bed": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "desk": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "bookshelf": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "cabinet": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "plant": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "tree": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "fence": {
+    "source": "objaverse",
+    "candidates": []
+  },
+  "road_segment": {
+    "source": "objaverse",
+    "candidates": []
+  }
+}

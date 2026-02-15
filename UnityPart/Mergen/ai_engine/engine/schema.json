@@ -1,0 +1,74 @@
+{
+  "intents": [
+    "SetRoom",
+    "CreateObject",
+    "PlaceObject",
+    "RotateObject",
+    "ResizeObject",
+    "DeleteObject",
+    "SetMaterial"
+  ],
+  "args_schema": {
+    "category": {
+      "type": "string",
+      "description": "New object type",
+      "examples": [ "chair", "table", "lamp", "tv" ]
+    },
+    "target": {
+      "type": "string",
+      "description": "Existing object id or special token",
+      "allowed_special": [ "selection", "LAST_CREATED", "LAST_SELECTED" ]
+    },
+    "use_selection": {
+      "type": "boolean",
+      "default": false
+    },
+    "reference": {
+      "type": "string",
+      "description": "Reference object id"
+    },
+    "relation": {
+      "type": "string",
+      "enum": [ "on_top_of", "in_front_of", "behind", "left_of", "right_of", "near_wall", "extend_forward" ]
+    },
+    "side": {
+      "type": "string",
+      "enum": [ "left", "right", "front", "back", "center" ]
+    },
+    "distance_m": {
+      "type": "number",
+      "min": 0.0,
+      "default": 0.5
+    },
+    "yaw_deg": {
+      "type": "number",
+      "min": 0,
+      "max": 360,
+      "default": 0
+    },
+    "orientation_mode": {
+      "type": "string",
+      "enum": [ "face_reference", "same_as_reference", "none" ],
+      "default": "none"
+    },
+    "quantity": {
+      "type": "integer",
+      "min": 1,
+      "default": 1
+    },
+    "size_scale": {
+      "type": "number",
+      "min": 0.1,
+      "max": 10.0,
+      "default": 1.0
+    },
+    "room_size_m": {
+      "type": "array",
+      "length": 3,
+      "items_type": "number"
+    },
+    "material": {
+      "type": "string"
+    }
+  }
+}

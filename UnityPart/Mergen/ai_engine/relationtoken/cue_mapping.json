@@ -1,0 +1,15 @@
+{
+  "on top of": "on_top_of",
+  "on": "on_top_of",
+  "inside": "inside",
+  "in": "inside",
+  "in front of": "in_front_of",
+  "behind": "behind",
+  "under": "under",
+  "underneath": "under",
+  "next to": "next_to",
+  "beside": "next_to",
+  "near": "near",
+  "close to": "near",
+  "between": "between"
+}

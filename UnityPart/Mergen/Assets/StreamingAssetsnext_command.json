@@ -1,0 +1,14 @@
+{
+  "intent": "CreateObject",
+  "args": {
+    "category": "lamp",
+    "reference_category": null,
+    "relation": "none",
+    "side": "none",
+    "quantity": 1,
+    "distance_m": 0.0
+  },
+  "model_full_id": null,
+  "moved_span": "lamp",
+  "reference_span": null
+}

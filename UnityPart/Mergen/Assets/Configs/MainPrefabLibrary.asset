@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d36a15048dbda4c8bc52f309c5fbcc, type: 3}
+  m_Name: MainPrefabLibrary
+  m_EditorClassIdentifier: 
+  entries:
+  - category: bed
+    prefab: {fileID: 721045016804959642, guid: e44e3122cb7192042b96792e967c285b, type: 3}
+  - category: chair
+    prefab: {fileID: 3019014778883503191, guid: 82ec35e7b8d9d6d4686c5e7c2563e3b4, type: 3}
+  - category: desk
+    prefab: {fileID: 1352445456730484, guid: 46641b202acc82540a56b87cef6597a0, type: 3}
+  - category: lamp
+    prefab: {fileID: 144050, guid: d86da09306b147843a1c69451c909213, type: 3}
+  - category: sofa
+    prefab: {fileID: 691476478962250455, guid: 565cf19514b01bc4fb00e8bc27322cd0, type: 3}
+  - category: tv
+    prefab: {fileID: 100000, guid: 99741d6f5305da44889185967b69601f, type: 3}

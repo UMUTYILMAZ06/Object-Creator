@@ -1,0 +1,16 @@
+newmtl m0
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+d 0
+map_Ka 66333cf3ae508466.jpg
+map_Kd 66333cf3ae508466.jpg
+newmtl m1
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+d 0
+map_Ka 6330ad6f9c6d86a1.jpg
+map_Kd 6330ad6f9c6d86a1.jpg

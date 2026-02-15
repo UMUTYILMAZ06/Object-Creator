@@ -1,0 +1,269 @@
+{
+  "text": "set the room to five by four meters, height three",
+  "gold_command": {
+    "intent": "SetRoom",
+    "args": { "room_size_m": [ 5.0, 4.0, 3.0 ] }
+  }
+}
+{"text": "set the room to six by five meters, height three", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [6.0, 5.0, 3.0]}}}
+{"text": "set a small room three by three meters, height two point five", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [3.0, 3.0, 2.5]}}}
+{"text": "make the room four by four meters with height two point eight", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [4.0, 4.0, 2.8]}}}
+{"text": "configure the room to five by six meters, height three point two", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [5.0, 6.0, 3.2]}}}
+{"text": "set the room dimensions to seven by five meters and height three", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [7.0, 5.0, 3.0]}}}
+{"text": "create a narrow room three by six meters, height two point seven", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [3.0, 6.0, 2.7]}}}
+{"text": "make a square room four by four meters, height three", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [4.0, 4.0, 3.0]}}}
+{"text": "set the room to eight by four meters, height three point two", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [8.0, 4.0, 3.2]}}}
+{"text": "make a compact room three point five by three meters, height two point six", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [3.5, 3.0, 2.6]}}}
+{"text": "create a sofa at the center of the room", "gold_command": {"intent": "CreateObject", "args": {"category": "sofa", "relation": "in_front_of", "reference": "room_center", "distance_m": 0.0}}}
+{"text": "create a table in front of the sofa, one meter away", "gold_command": {"intent": "CreateObject", "args": {"category": "table", "reference": "sofa_1", "relation": "in_front_of", "distance_m": 1.0}}}
+{"text": "create a lamp to the left of the sofa, zero point six meters away", "gold_command": {"intent": "CreateObject", "args": {"category": "lamp", "reference": "sofa_1", "relation": "left_of", "side": "left", "distance_m": 0.6}}}
+{"text": "create a lamp to the right of the sofa, zero point six meters away", "gold_command": {"intent": "CreateObject", "args": {"category": "lamp", "reference": "sofa_1", "relation": "right_of", "side": "right", "distance_m": 0.6}}}
+{"text": "create a tv in front of the sofa at two point five meters", "gold_command": {"intent": "CreateObject", "args": {"category": "tv", "reference": "sofa_1", "relation": "in_front_of", "distance_m": 2.5, "orientation_mode": "face_reference"}}}
+{"text": "create a desk near the front wall", "gold_command": {"intent": "CreateObject", "args": {"category": "desk", "relation": "near_wall", "side": "front", "distance_m": 0.5}}}
+{"text": "create a chair behind the desk, one meter away", "gold_command": {"intent": "CreateObject", "args": {"category": "chair", "reference": "desk_1", "relation": "behind", "distance_m": 1.0}}}
+{"text": "create a bookshelf against the left wall", "gold_command": {"intent": "CreateObject", "args": {"category": "bookshelf", "relation": "near_wall", "side": "left", "distance_m": 0.1}}}
+{"text": "create a cabinet next to the bookshelf on the right", "gold_command": {"intent": "CreateObject", "args": {"category": "cabinet", "reference": "bookshelf_1", "relation": "right_of", "side": "right", "distance_m": 0.3}}}
+{"text": "create a bed near the back wall, centered", "gold_command": {"intent": "CreateObject", "args": {"category": "bed", "relation": "near_wall", "side": "back", "distance_m": 0.2}}}
+{"text": "create a plant in the front left corner of the room", "gold_command": {"intent": "CreateObject", "args": {"category": "plant", "relation": "near_wall", "side": "front", "distance_m": 0.1}}}
+{"text": "create a plant in the front right corner of the room", "gold_command": {"intent": "CreateObject", "args": {"category": "plant", "relation": "near_wall", "side": "front", "distance_m": 0.1}}}
+{"text": "create two chairs in front of the table", "gold_command": {"intent": "CreateObject", "args": {"category": "chair", "quantity": 2, "reference": "table_1", "relation": "in_front_of", "distance_m": 0.7}}}
+{"text": "create four chairs around the table", "gold_command": {"intent": "CreateObject", "args": {"category": "chair", "quantity": 4, "reference": "table_1", "relation": "in_front_of", "distance_m": 0.8}}}
+{"text": "create a floor lamp near the back wall behind the sofa", "gold_command": {"intent": "CreateObject", "args": {"category": "lamp", "reference": "sofa_1", "relation": "behind", "distance_m": 0.4}}}
+{"text": "create a desk to the right of the bed", "gold_command": {"intent": "CreateObject", "args": {"category": "desk", "reference": "bed_1", "relation": "right_of", "side": "right", "distance_m": 0.8}}}
+{"text": "create a bookshelf to the left of the bed", "gold_command": {"intent": "CreateObject", "args": {"category": "bookshelf", "reference": "bed_1", "relation": "left_of", "side": "left", "distance_m": 0.8}}}
+{"text": "create a tv on the wall in front of the bed", "gold_command": {"intent": "CreateObject", "args": {"category": "tv", "reference": "bed_1", "relation": "in_front_of", "distance_m": 2.0}}}
+{"text": "create five trees in the scene", "gold_command": {"intent": "CreateObject", "args": {"category": "tree", "quantity": 5}}}
+{"text": "create three trees behind the house", "gold_command": {"intent": "CreateObject", "args": {"category": "tree", "quantity": 3, "reference": "house_1", "relation": "behind", "distance_m": 2.0}}}
+{"text": "create a fence segment in front of the house", "gold_command": {"intent": "CreateObject", "args": {"category": "fence", "reference": "house_1", "relation": "in_front_of", "distance_m": 1.0}}}
+{"text": "create a straight road segment in front of the house", "gold_command": {"intent": "CreateObject", "args": {"category": "road_segment", "reference": "house_1", "relation": "in_front_of", "distance_m": 3.0}}}
+{"text": "create two fence segments to the left of the house", "gold_command": {"intent": "CreateObject", "args": {"category": "fence", "quantity": 2, "reference": "house_1", "relation": "left_of", "side": "left", "distance_m": 1.0}}}
+{"text": "create a tree at the end of the road", "gold_command": {"intent": "CreateObject", "args": {"category": "tree", "reference": "road_segment_1", "relation": "in_front_of", "distance_m": 5.0}}}
+{"text": "create a lamp above the desk", "gold_command": {"intent": "CreateObject", "args": {"category": "lamp", "reference": "desk_1", "relation": "on_top_of"}}}
+{"text": "create a small table next to the sofa on the right", "gold_command": {"intent": "CreateObject", "args": {"category": "table", "reference": "sofa_1", "relation": "right_of", "side": "right", "distance_m": 0.5}}}
+{"text": "create a cabinet near the back wall, on the right side", "gold_command": {"intent": "CreateObject", "args": {"category": "cabinet", "relation": "near_wall", "side": "back", "distance_m": 0.3}}}
+{"text": "place a plant next to the bookshelf on the right", "gold_command": {"intent": "PlaceObject", "args": {"category": "plant", "reference": "bookshelf_1", "relation": "right_of", "side": "right", "distance_m": 0.5}}}
+{"text": "place a chair behind the desk, one meter away", "gold_command": {"intent": "PlaceObject", "args": {"category": "chair", "reference": "desk_1", "relation": "behind", "distance_m": 1.0}}}
+{"text": "put a lamp on the desk", "gold_command": {"intent": "PlaceObject", "args": {"category": "lamp", "reference": "desk_1", "relation": "on_top_of"}}}
+{"text": "put a lamp on the table", "gold_command": {"intent": "PlaceObject", "args": {"category": "lamp", "reference": "table_1", "relation": "on_top_of"}}}
+{"text": "place the tv in front of the sofa at two point five meters", "gold_command": {"intent": "PlaceObject", "args": {"category": "tv", "reference": "sofa_1", "relation": "in_front_of", "distance_m": 2.5, "orientation_mode": "face_reference"}}}
+{"text": "place a plant to the left of the tv", "gold_command": {"intent": "PlaceObject", "args": {"category": "plant", "reference": "tv_1", "relation": "left_of", "side": "left", "distance_m": 0.4}}}
+{"text": "place two chairs in front of the desk", "gold_command": {"intent": "PlaceObject", "args": {"category": "chair", "quantity": 2, "reference": "desk_1", "relation": "in_front_of", "distance_m": 0.7}}}
+{"text": "move the sofa fifty centimeters to the right", "gold_command": {"intent": "PlaceObject", "args": {"target": "sofa_1", "side": "right", "distance_m": 0.5}}}
+{"text": "move the table twenty centimeters back", "gold_command": {"intent": "PlaceObject", "args": {"target": "table_1", "side": "back", "distance_m": 0.2}}}
+{"text": "place the bed closer to the back wall by half a meter", "gold_command": {"intent": "PlaceObject", "args": {"target": "bed_1", "side": "back", "distance_m": 0.5}}}
+{"text": "place the cabinet closer to the left wall", "gold_command": {"intent": "PlaceObject", "args": {"target": "cabinet_1", "side": "left", "distance_m": 0.3}}}
+{"text": "place a tree two meters in front of the house", "gold_command": {"intent": "PlaceObject", "args": {"category": "tree", "reference": "house_1", "relation": "in_front_of", "distance_m": 2.0}}}
+{"text": "place three trees along the left side of the road", "gold_command": {"intent": "PlaceObject", "args": {"category": "tree", "quantity": 3, "reference": "road_segment_1", "relation": "left_of", "side": "left", "distance_m": 1.0}}}
+{"text": "extend the fence forward by five meters", "gold_command": {"intent": "PlaceObject", "args": {"category": "fence", "reference": "fence_1", "relation": "extend_forward", "distance_m": 5.0}}}
+{"text": "extend the road forward by ten meters", "gold_command": {"intent": "PlaceObject", "args": {"category": "road_segment", "reference": "road_segment_1", "relation": "extend_forward", "distance_m": 10.0}}}
+{"text": "place a fence segment to the right of the road", "gold_command": {"intent": "PlaceObject", "args": {"category": "fence", "reference": "road_segment_1", "relation": "right_of", "side": "right", "distance_m": 1.0}}}
+{"text": "place a tree behind the fence line", "gold_command": {"intent": "PlaceObject", "args": {"category": "tree", "reference": "fence_1", "relation": "behind", "distance_m": 1.5}}}
+{"text": "place a chair to the right of the table", "gold_command": {"intent": "PlaceObject", "args": {"category": "chair", "reference": "table_1", "relation": "right_of", "side": "right", "distance_m": 0.5}}}
+{"text": "place a chair to the left of the table", "gold_command": {"intent": "PlaceObject", "args": {"category": "chair", "reference": "table_1", "relation": "left_of", "side": "left", "distance_m": 0.5}}}
+{"text": "place a lamp directly above the table", "gold_command": {"intent": "PlaceObject", "args": {"category": "lamp", "reference": "table_1", "relation": "on_top_of"}}}
+{"text": "place a small table between the sofa and the chair", "gold_command": {"intent": "PlaceObject", "args": {"category": "table", "reference": "sofa_1", "relation": "in_front_of", "distance_m": 0.5}}}
+{"text": "place a plant near the room center", "gold_command": {"intent": "PlaceObject", "args": {"category": "plant", "reference": "room_center", "relation": "in_front_of", "distance_m": 0.0}}}
+{"text": "rotate the selected chairs by ninety degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "selection", "use_selection": true, "yaw_deg": 90}}}
+{"text": "rotate the tv to face the sofa", "gold_command": {"intent": "RotateObject", "args": {"target": "tv_1", "orientation_mode": "face_reference", "reference": "sofa_1"}}}
+{"text": "rotate the table by forty five degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "table_1", "yaw_deg": 45}}}
+{"text": "rotate the road segment by fifteen degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "road_segment_1", "yaw_deg": 15}}}
+{"text": "rotate the bed by ninety degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "bed_1", "yaw_deg": 90}}}
+{"text": "rotate the bookshelf slightly by ten degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "bookshelf_1", "yaw_deg": 10}}}
+{"text": "rotate the selected objects by one hundred eighty degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "selection", "use_selection": true, "yaw_deg": 180}}}
+{"text": "rotate the fence segments by five degrees outward", "gold_command": {"intent": "RotateObject", "args": {"target": "fence_1", "yaw_deg": 5}}}
+{"text": "rotate the lamp to face the table", "gold_command": {"intent": "RotateObject", "args": {"target": "lamp_1", "orientation_mode": "face_reference", "reference": "table_1"}}}
+{"text": "resize the desk to one point two scale", "gold_command": {"intent": "ResizeObject", "args": {"target": "desk_1", "size_scale": 1.2}}}
+{"text": "make the bed smaller, scale zero point eight", "gold_command": {"intent": "ResizeObject", "args": {"target": "bed_1", "size_scale": 0.8}}}
+{"text": "make the sofa slightly larger, scale one point one", "gold_command": {"intent": "ResizeObject", "args": {"target": "sofa_1", "size_scale": 1.1}}}
+{"text": "shrink the table to zero point nine of its size", "gold_command": {"intent": "ResizeObject", "args": {"target": "table_1", "size_scale": 0.9}}}
+{"text": "scale the bookshelf up to one point three", "gold_command": {"intent": "ResizeObject", "args": {"target": "bookshelf_1", "size_scale": 1.3}}}
+{"text": "resize the cabinet to zero point seven scale", "gold_command": {"intent": "ResizeObject", "args": {"target": "cabinet_1", "size_scale": 0.7}}}
+{"text": "resize the plant to one point five scale", "gold_command": {"intent": "ResizeObject", "args": {"target": "plant_1", "size_scale": 1.5}}}
+{"text": "resize the tree to zero point eight scale", "gold_command": {"intent": "ResizeObject", "args": {"target": "tree_1", "size_scale": 0.8}}}
+{"text": "resize the road segment to one point one scale", "gold_command": {"intent": "ResizeObject", "args": {"target": "road_segment_1", "size_scale": 1.1}}}
+{"text": "resize the fence slightly smaller, scale zero point nine five", "gold_command": {"intent": "ResizeObject", "args": {"target": "fence_1", "size_scale": 0.95}}}
+{"text": "delete the selected objects", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "remove the cabinet", "gold_command": {"intent": "DeleteObject", "args": {"target": "cabinet_1"}}}
+{"text": "delete the current desk", "gold_command": {"intent": "DeleteObject", "args": {"target": "desk_1"}}}
+{"text": "delete the current road segment", "gold_command": {"intent": "DeleteObject", "args": {"target": "road_segment_1"}}}
+{"text": "remove the fence in front of the house", "gold_command": {"intent": "DeleteObject", "args": {"target": "fence_1"}}}
+{"text": "delete the selected trees", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "remove the bookshelf", "gold_command": {"intent": "DeleteObject", "args": {"target": "bookshelf_1"}}}
+{"text": "delete the plant near the tv", "gold_command": {"intent": "DeleteObject", "args": {"target": "plant_1"}}}
+{"text": "delete the lamp on the desk", "gold_command": {"intent": "DeleteObject", "args": {"target": "lamp_1"}}}
+{"text": "set the floor material to oak laminate", "gold_command": {"intent": "SetMaterial", "args": {"target": "floor", "material": "Laminate.Oak"}}}
+{"text": "change the wall material to white paint", "gold_command": {"intent": "SetMaterial", "args": {"target": "walls", "material": "Paint.White"}}}
+{"text": "set the sofa material to gray fabric", "gold_command": {"intent": "SetMaterial", "args": {"target": "sofa_1", "material": "Fabric.Gray"}}}
+{"text": "change the table material to dark wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "table_1", "material": "Wood.Dark"}}}
+{"text": "set the lamp material to warm metal", "gold_command": {"intent": "SetMaterial", "args": {"target": "lamp_1", "material": "Metal.Warm"}}}
+{"text": "set the bed material to light fabric", "gold_command": {"intent": "SetMaterial", "args": {"target": "bed_1", "material": "Fabric.Light"}}}
+{"text": "change the bookshelf material to white wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "bookshelf_1", "material": "Wood.White"}}}
+{"text": "set the cabinet material to glossy white", "gold_command": {"intent": "SetMaterial", "args": {"target": "cabinet_1", "material": "Lacquer.White"}}}
+{"text": "set the road material to asphalt dark", "gold_command": {"intent": "SetMaterial", "args": {"target": "road_segment_1", "material": "Asphalt.Dark"}}}
+{"text": "set the fence material to light wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "fence_1", "material": "Wood.Light"}}}
+{"text": "set the room to ten by four meters, height three point five", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [10.0, 4.0, 3.5]}}}
+{"text": "set the room to four by six meters with height three", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [4.0, 6.0, 3.0]}}}
+{"text": "make a long narrow room eight by three meters, height two point seven", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [8.0, 3.0, 2.7]}}}
+{"text": "configure the room as six by six meters, height three point two", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [6.0, 6.0, 3.2]}}}
+{"text": "set a very small room two point five by three meters, height two point four", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [2.5, 3.0, 2.4]}}}
+{"text": "create a sofa slightly in front of the room center", "gold_command": {"intent": "CreateObject", "args": {"category": "sofa", "reference": "room_center", "relation": "in_front_of", "distance_m": 0.3}}}
+{"text": "create a low table between the sofa and the tv", "gold_command": {"intent": "CreateObject", "args": {"category": "table", "reference": "sofa_1", "relation": "in_front_of", "distance_m": 0.6}}}
+{"text": "create a desk near the right wall", "gold_command": {"intent": "CreateObject", "args": {"category": "desk", "relation": "near_wall", "side": "right", "distance_m": 0.4}}}
+{"text": "create a chair slightly to the left of the desk", "gold_command": {"intent": "CreateObject", "args": {"category": "chair", "reference": "desk_1", "relation": "left_of", "side": "left", "distance_m": 0.4}}}
+{"text": "create a tall bookshelf near the back left corner", "gold_command": {"intent": "CreateObject", "args": {"category": "bookshelf", "relation": "near_wall", "side": "back", "distance_m": 0.2}}}
+{"text": "create a small cabinet under the tv", "gold_command": {"intent": "CreateObject", "args": {"category": "cabinet", "reference": "tv_1", "relation": "in_front_of", "distance_m": 0.1}}}
+{"text": "create a bedside table to the right of the bed", "gold_command": {"intent": "CreateObject", "args": {"category": "table", "reference": "bed_1", "relation": "right_of", "side": "right", "distance_m": 0.5}}}
+{"text": "create a pair of lamps on both sides of the bed", "gold_command": {"intent": "CreateObject", "args": {"category": "lamp", "quantity": 2, "reference": "bed_1", "relation": "in_front_of", "distance_m": 0.3}}}
+{"text": "create three plants along the front wall", "gold_command": {"intent": "CreateObject", "args": {"category": "plant", "quantity": 3, "relation": "near_wall", "side": "front", "distance_m": 0.2}}}
+{"text": "create a tree line behind the fence with four trees", "gold_command": {"intent": "CreateObject", "args": {"category": "tree", "quantity": 4, "reference": "fence_1", "relation": "behind", "distance_m": 2.0}}}
+{"text": "create two road segments in front of the house", "gold_command": {"intent": "CreateObject", "args": {"category": "road_segment", "quantity": 2, "reference": "house_1", "relation": "in_front_of", "distance_m": 4.0}}}
+{"text": "create a continuous fence along the front of the property", "gold_command": {"intent": "CreateObject", "args": {"category": "fence", "quantity": 3, "reference": "house_1", "relation": "in_front_of", "distance_m": 1.5}}}
+{"text": "create a plant next to the sofa on the left side", "gold_command": {"intent": "CreateObject", "args": {"category": "plant", "reference": "sofa_1", "relation": "left_of", "side": "left", "distance_m": 0.4}}}
+{"text": "create a small round table directly in front of the sofa", "gold_command": {"intent": "CreateObject", "args": {"category": "table", "reference": "sofa_1", "relation": "in_front_of", "distance_m": 0.8}}}
+{"text": "create a floor lamp in the back right corner of the room", "gold_command": {"intent": "CreateObject", "args": {"category": "lamp", "relation": "near_wall", "side": "back", "distance_m": 0.1}}}
+{"text": "place the sofa closer to the room center by half a meter", "gold_command": {"intent": "PlaceObject", "args": {"target": "sofa_1", "side": "front", "distance_m": 0.5}}}
+{"text": "place the table slightly closer to the sofa", "gold_command": {"intent": "PlaceObject", "args": {"target": "table_1", "side": "back", "distance_m": 0.3}}}
+{"text": "place the desk a bit further from the wall by zero point four meters", "gold_command": {"intent": "PlaceObject", "args": {"target": "desk_1", "side": "front", "distance_m": 0.4}}}
+{"text": "place the chair a little closer to the desk", "gold_command": {"intent": "PlaceObject", "args": {"target": "chair_1", "side": "front", "distance_m": 0.2}}}
+{"text": "place a lamp on top of the bedside table", "gold_command": {"intent": "PlaceObject", "args": {"category": "lamp", "reference": "table_1", "relation": "on_top_of"}}}
+{"text": "place a plant between the tv and the bookshelf", "gold_command": {"intent": "PlaceObject", "args": {"category": "plant", "reference": "tv_1", "relation": "right_of", "side": "right", "distance_m": 0.6}}}
+{"text": "place two chairs at the far side of the table", "gold_command": {"intent": "PlaceObject", "args": {"category": "chair", "quantity": 2, "reference": "table_1", "relation": "in_front_of", "distance_m": 0.9}}}
+{"text": "place the bookshelf a bit closer to the corner", "gold_command": {"intent": "PlaceObject", "args": {"target": "bookshelf_1", "side": "left", "distance_m": 0.2}}}
+{"text": "place a cabinet slightly away from the bed", "gold_command": {"intent": "PlaceObject", "args": {"target": "cabinet_1", "side": "front", "distance_m": 0.3}}}
+{"text": "place a plant near the door, close to the wall", "gold_command": {"intent": "PlaceObject", "args": {"category": "plant", "relation": "near_wall", "side": "front", "distance_m": 0.2}}}
+{"text": "place a tree a little closer to the road", "gold_command": {"intent": "PlaceObject", "args": {"target": "tree_1", "side": "front", "distance_m": 0.5}}}
+{"text": "place two trees behind the house, evenly spaced", "gold_command": {"intent": "PlaceObject", "args": {"category": "tree", "quantity": 2, "reference": "house_1", "relation": "behind", "distance_m": 3.0}}}
+{"text": "extend the road forward by five more meters", "gold_command": {"intent": "PlaceObject", "args": {"category": "road_segment", "reference": "road_segment_1", "relation": "extend_forward", "distance_m": 5.0}}}
+{"text": "extend the fence line forward by two meters", "gold_command": {"intent": "PlaceObject", "args": {"category": "fence", "reference": "fence_1", "relation": "extend_forward", "distance_m": 2.0}}}
+{"text": "place a fence segment behind the house", "gold_command": {"intent": "PlaceObject", "args": {"category": "fence", "reference": "house_1", "relation": "behind", "distance_m": 1.0}}}
+{"text": "place a road segment slightly to the left of the previous one", "gold_command": {"intent": "PlaceObject", "args": {"category": "road_segment", "reference": "road_segment_1", "relation": "left_of", "side": "left", "distance_m": 1.0}}}
+{"text": "place the selected chairs a bit closer to the table", "gold_command": {"intent": "PlaceObject", "args": {"target": "selection", "use_selection": true, "side": "front", "distance_m": 0.3}}}
+{"text": "place the selected objects slightly to the right", "gold_command": {"intent": "PlaceObject", "args": {"target": "selection", "use_selection": true, "side": "right", "distance_m": 0.4}}}
+{"text": "rotate the sofa by thirty degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "sofa_1", "yaw_deg": 30}}}
+{"text": "rotate the desk so it faces the center of the room", "gold_command": {"intent": "RotateObject", "args": {"target": "desk_1", "orientation_mode": "face_reference", "reference": "room_center"}}}
+{"text": "rotate the chair slightly by fifteen degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "chair_1", "yaw_deg": 15}}}
+{"text": "rotate the tv a little to the left by ten degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "tv_1", "yaw_deg": -10}}}
+{"text": "rotate the bookshelf so it aligns with the back wall", "gold_command": {"intent": "RotateObject", "args": {"target": "bookshelf_1", "yaw_deg": 0}}}
+{"text": "rotate the bed to match the orientation of the room", "gold_command": {"intent": "RotateObject", "args": {"target": "bed_1", "yaw_deg": 0}}}
+{"text": "rotate the selected lamps by ninety degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "selection", "use_selection": true, "yaw_deg": 90}}}
+{"text": "rotate the tree slightly by five degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "tree_1", "yaw_deg": 5}}}
+{"text": "rotate the fence segments inward by ten degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "fence_1", "yaw_deg": -10}}}
+{"text": "rotate the plant so it faces the center of the room", "gold_command": {"intent": "RotateObject", "args": {"target": "plant_1", "orientation_mode": "face_reference", "reference": "room_center"}}}
+{"text": "slightly increase the size of the lamp to one point one", "gold_command": {"intent": "ResizeObject", "args": {"target": "lamp_1", "size_scale": 1.1}}}
+{"text": "make the desk a bit smaller, scale zero point nine five", "gold_command": {"intent": "ResizeObject", "args": {"target": "desk_1", "size_scale": 0.95}}}
+{"text": "enlarge the table to one point three scale", "gold_command": {"intent": "ResizeObject", "args": {"target": "table_1", "size_scale": 1.3}}}
+{"text": "shrink the chair slightly, scale zero point nine", "gold_command": {"intent": "ResizeObject", "args": {"target": "chair_1", "size_scale": 0.9}}}
+{"text": "make the bookshelf much larger, scale one point five", "gold_command": {"intent": "ResizeObject", "args": {"target": "bookshelf_1", "size_scale": 1.5}}}
+{"text": "reduce the cabinet size to zero point eight", "gold_command": {"intent": "ResizeObject", "args": {"target": "cabinet_1", "size_scale": 0.8}}}
+{"text": "increase the plant size to one point two", "gold_command": {"intent": "ResizeObject", "args": {"target": "plant_1", "size_scale": 1.2}}}
+{"text": "scale the selected trees up to one point four", "gold_command": {"intent": "ResizeObject", "args": {"target": "selection", "use_selection": true, "size_scale": 1.4}}}
+{"text": "make the fence segments slightly smaller, scale zero point nine", "gold_command": {"intent": "ResizeObject", "args": {"target": "fence_1", "size_scale": 0.9}}}
+{"text": "resize the road a bit wider, scale one point two", "gold_command": {"intent": "ResizeObject", "args": {"target": "road_segment_1", "size_scale": 1.2}}}
+{"text": "delete the sofa from the scene", "gold_command": {"intent": "DeleteObject", "args": {"target": "sofa_1"}}}
+{"text": "delete the current tv", "gold_command": {"intent": "DeleteObject", "args": {"target": "tv_1"}}}
+{"text": "remove the desk and its chair", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "delete the plants along the front wall", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "remove the trees behind the house", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "delete the fence segments on the right side", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "set the floor material to dark concrete", "gold_command": {"intent": "SetMaterial", "args": {"target": "floor", "material": "Concrete.Dark"}}}
+{"text": "set the wall material to light gray paint", "gold_command": {"intent": "SetMaterial", "args": {"target": "walls", "material": "Paint.LightGray"}}}
+{"text": "change the sofa material to blue fabric", "gold_command": {"intent": "SetMaterial", "args": {"target": "sofa_1", "material": "Fabric.Blue"}}}
+{"text": "change the desk material to oak wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "desk_1", "material": "Wood.Oak"}}}
+{"text": "set the bookshelf material to dark brown wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "bookshelf_1", "material": "Wood.DarkBrown"}}}
+{"text": "set the bed material to white fabric", "gold_command": {"intent": "SetMaterial", "args": {"target": "bed_1", "material": "Fabric.White"}}}
+{"text": "change the cabinet material to matte black", "gold_command": {"intent": "SetMaterial", "args": {"target": "cabinet_1", "material": "Lacquer.Black"}}}
+{"text": "set the road material to light asphalt", "gold_command": {"intent": "SetMaterial", "args": {"target": "road_segment_1", "material": "Asphalt.Light"}}}
+{"text": "change the fence material to rustic wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "fence_1", "material": "Wood.Rustic"}}}
+{"text": "set the plant material to dark green leaves", "gold_command": {"intent": "SetMaterial", "args": {"target": "plant_1", "material": "Leaves.DarkGreen"}}}
+{"text": "set the room to nine by five meters, height three", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [9.0, 5.0, 3.0]}}}
+{"text": "set the room to five by five meters with height three point one", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [5.0, 5.0, 3.1]}}}
+{"text": "make a medium room six by four meters, height two point nine", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [6.0, 4.0, 2.9]}}}
+{"text": "configure the room as seven by seven meters, height three point three", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [7.0, 7.0, 3.3]}}}
+{"text": "set a tiny room two by two point five meters, height two point three", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [2.0, 2.5, 2.3]}}}
+{"text": "set the room to four point five by three point five meters, height two point seven", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [4.5, 3.5, 2.7]}}}
+{"text": "create a sofa near the back wall, slightly to the right", "gold_command": {"intent": "CreateObject", "args": {"category": "sofa", "relation": "near_wall", "side": "back", "distance_m": 0.3}}}
+{"text": "create a dining table closer to the left wall", "gold_command": {"intent": "CreateObject", "args": {"category": "table", "relation": "near_wall", "side": "left", "distance_m": 0.4}}}
+{"text": "create three chairs in a row in front of the table", "gold_command": {"intent": "CreateObject", "args": {"category": "chair", "quantity": 3, "reference": "table_1", "relation": "in_front_of", "distance_m": 0.7}}}
+{"text": "create a small desk near the window on the right wall", "gold_command": {"intent": "CreateObject", "args": {"category": "desk", "relation": "near_wall", "side": "right", "distance_m": 0.3}}}
+{"text": "create a tall cabinet in the back right corner of the room", "gold_command": {"intent": "CreateObject", "args": {"category": "cabinet", "relation": "near_wall", "side": "back", "distance_m": 0.1}}}
+{"text": "create two plants around the sofa, one on each side", "gold_command": {"intent": "CreateObject", "args": {"category": "plant", "quantity": 2, "reference": "sofa_1", "relation": "in_front_of", "distance_m": 0.4}}}
+{"text": "create six trees forming a loose group behind the house", "gold_command": {"intent": "CreateObject", "args": {"category": "tree", "quantity": 6, "reference": "house_1", "relation": "behind", "distance_m": 3.0}}}
+{"text": "create four fence segments around the front of the garden", "gold_command": {"intent": "CreateObject", "args": {"category": "fence", "quantity": 4, "reference": "house_1", "relation": "in_front_of", "distance_m": 2.0}}}
+{"text": "create three road segments forming a straight driveway", "gold_command": {"intent": "CreateObject", "args": {"category": "road_segment", "quantity": 3, "reference": "house_1", "relation": "in_front_of", "distance_m": 6.0}}}
+{"text": "create a low bookshelf next to the desk on the left", "gold_command": {"intent": "CreateObject", "args": {"category": "bookshelf", "reference": "desk_1", "relation": "left_of", "side": "left", "distance_m": 0.6}}}
+{"text": "create a floor lamp next to the tv on the right side", "gold_command": {"intent": "CreateObject", "args": {"category": "lamp", "reference": "tv_1", "relation": "right_of", "side": "right", "distance_m": 0.4}}}
+{"text": "place the sofa a little further from the back wall", "gold_command": {"intent": "PlaceObject", "args": {"target": "sofa_1", "side": "front", "distance_m": 0.4}}}
+{"text": "place the table exactly in the center of the room", "gold_command": {"intent": "PlaceObject", "args": {"target": "table_1", "side": "center", "distance_m": 0.0}}}
+{"text": "place a chair in front of the tv, one point five meters away", "gold_command": {"intent": "PlaceObject", "args": {"category": "chair", "reference": "tv_1", "relation": "in_front_of", "distance_m": 1.5}}}
+{"text": "place a plant between the sofa and the window", "gold_command": {"intent": "PlaceObject", "args": {"category": "plant", "reference": "sofa_1", "relation": "in_front_of", "distance_m": 0.5}}}
+{"text": "place the bookshelf tightly against the back wall", "gold_command": {"intent": "PlaceObject", "args": {"target": "bookshelf_1", "side": "back", "distance_m": 0.1}}}
+{"text": "place two plants symmetrically on both sides of the bed", "gold_command": {"intent": "PlaceObject", "args": {"category": "plant", "quantity": 2, "reference": "bed_1", "relation": "in_front_of", "distance_m": 0.5}}}
+{"text": "place the selected chairs in a straight line", "gold_command": {"intent": "PlaceObject", "args": {"target": "selection", "use_selection": true, "side": "front", "distance_m": 0.6}}}
+{"text": "place the selected objects closer to the left wall", "gold_command": {"intent": "PlaceObject", "args": {"target": "selection", "use_selection": true, "side": "left", "distance_m": 0.5}}}
+{"text": "place a fence segment exactly at the end of the road", "gold_command": {"intent": "PlaceObject", "args": {"category": "fence", "reference": "road_segment_1", "relation": "in_front_of", "distance_m": 0.5}}}
+{"text": "place a tree near the corner of the fence line", "gold_command": {"intent": "PlaceObject", "args": {"category": "tree", "reference": "fence_1", "relation": "right_of", "side": "right", "distance_m": 1.0}}}
+{"text": "place three trees along the back fence, evenly spaced", "gold_command": {"intent": "PlaceObject", "args": {"category": "tree", "quantity": 3, "reference": "fence_1", "relation": "behind", "distance_m": 2.5}}}
+{"text": "place a road segment connecting the main road to the house", "gold_command": {"intent": "PlaceObject", "args": {"category": "road_segment", "reference": "house_1", "relation": "in_front_of", "distance_m": 4.0}}}
+{"text": "rotate the sofa so it faces the tv directly", "gold_command": {"intent": "RotateObject", "args": {"target": "sofa_1", "orientation_mode": "face_reference", "reference": "tv_1"}}}
+{"text": "rotate the selected objects randomly by forty five degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "selection", "use_selection": true, "yaw_deg": 45}}}
+{"text": "rotate the desk slightly clockwise by ten degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "desk_1", "yaw_deg": 10}}}
+{"text": "rotate the tree so it aligns with the road direction", "gold_command": {"intent": "RotateObject", "args": {"target": "tree_1", "yaw_deg": 0}}}
+{"text": "scale all selected chairs up to one point two", "gold_command": {"intent": "ResizeObject", "args": {"target": "selection", "use_selection": true, "size_scale": 1.2}}}
+{"text": "make the current sofa much smaller, scale zero point seven", "gold_command": {"intent": "ResizeObject", "args": {"target": "sofa_1", "size_scale": 0.7}}}
+{"text": "slightly increase the size of the road segments, scale one point one", "gold_command": {"intent": "ResizeObject", "args": {"target": "road_segment_1", "size_scale": 1.1}}}
+{"text": "make the plants a bit smaller, scale zero point nine five", "gold_command": {"intent": "ResizeObject", "args": {"target": "plant_1", "size_scale": 0.95}}}
+{"text": "delete all selected furniture from the room", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "remove the current bed from the scene", "gold_command": {"intent": "DeleteObject", "args": {"target": "bed_1"}}}
+{"text": "delete the fences along the front side of the house", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "remove the trees near the road", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "set the sofa material to dark leather", "gold_command": {"intent": "SetMaterial", "args": {"target": "sofa_1", "material": "Leather.Dark"}}}
+{"text": "set the desk material to light pine wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "desk_1", "material": "Wood.PineLight"}}}
+{"text": "change the tree material to bright green leaves", "gold_command": {"intent": "SetMaterial", "args": {"target": "tree_1", "material": "Leaves.BrightGreen"}}}
+{"text": "set the garden fence material to old gray wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "fence_1", "material": "Wood.AgedGray"}}}
+{"text": "set the room to six by three meters, height two point six", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [6.0, 3.0, 2.6]}}}
+{"text": "set the room to seven point five by four meters, height three", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [7.5, 4.0, 3.0]}}}
+{"text": "make a wide room nine by six meters, height three point two", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [9.0, 6.0, 3.2]}}}
+{"text": "configure a compact room four by three meters, height two point five", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [4.0, 3.0, 2.5]}}}
+{"text": "set a square room five by five meters, height two point nine", "gold_command": {"intent": "SetRoom", "args": {"room_size_m": [5.0, 5.0, 2.9]}}}
+
+{"text": "create a sofa close to the front wall, centered", "gold_command": {"intent": "CreateObject", "args": {"category": "sofa", "relation": "near_wall", "side": "front", "distance_m": 0.3}}}
+{"text": "create a long table along the left wall", "gold_command": {"intent": "CreateObject", "args": {"category": "table", "relation": "near_wall", "side": "left", "distance_m": 0.2}}}
+{"text": "create four chairs along the right side of the table", "gold_command": {"intent": "CreateObject", "args": {"category": "chair", "quantity": 4, "reference": "table_1", "relation": "right_of", "side": "right", "distance_m": 0.5}}}
+{"text": "create a work desk near the back wall, slightly to the left", "gold_command": {"intent": "CreateObject", "args": {"category": "desk", "relation": "near_wall", "side": "back", "distance_m": 0.3}}}
+{"text": "create a tall bookshelf next to the work desk on the right", "gold_command": {"intent": "CreateObject", "args": {"category": "bookshelf", "reference": "desk_1", "relation": "right_of", "side": "right", "distance_m": 0.4}}}
+{"text": "create a cabinet near the left wall behind the sofa", "gold_command": {"intent": "CreateObject", "args": {"category": "cabinet", "reference": "sofa_1", "relation": "behind", "distance_m": 0.6}}}
+{"text": "create a bed along the right wall, centered on the room", "gold_command": {"intent": "CreateObject", "args": {"category": "bed", "relation": "near_wall", "side": "right", "distance_m": 0.2}}}
+{"text": "create three plants in the back corners and center of the back wall", "gold_command": {"intent": "CreateObject", "args": {"category": "plant", "quantity": 3, "relation": "near_wall", "side": "back", "distance_m": 0.2}}}
+{"text": "create eight trees forming a small forest behind the house", "gold_command": {"intent": "CreateObject", "args": {"category": "tree", "quantity": 8, "reference": "house_1", "relation": "behind", "distance_m": 4.0}}}
+{"text": "create a short fence line on the left side of the garden", "gold_command": {"intent": "CreateObject", "args": {"category": "fence", "quantity": 2, "reference": "house_1", "relation": "left_of", "side": "left", "distance_m": 2.0}}}
+{"text": "create three road segments leading from the house to the main road", "gold_command": {"intent": "CreateObject", "args": {"category": "road_segment", "quantity": 3, "reference": "house_1", "relation": "in_front_of", "distance_m": 7.0}}}
+
+{"text": "place the sofa slightly closer to the tv", "gold_command": {"intent": "PlaceObject", "args": {"target": "sofa_1", "side": "front", "distance_m": 0.4}}}
+{"text": "place the table a bit further from the sofa", "gold_command": {"intent": "PlaceObject", "args": {"target": "table_1", "side": "front", "distance_m": 0.3}}}
+{"text": "place the selected chairs evenly spaced along the side of the table", "gold_command": {"intent": "PlaceObject", "args": {"target": "selection", "use_selection": true, "side": "front", "distance_m": 0.6}}}
+{"text": "place a lamp on top of the cabinet", "gold_command": {"intent": "PlaceObject", "args": {"category": "lamp", "reference": "cabinet_1", "relation": "on_top_of"}}}
+{"text": "place a plant behind the sofa near the back wall", "gold_command": {"intent": "PlaceObject", "args": {"category": "plant", "reference": "sofa_1", "relation": "behind", "distance_m": 0.5}}}
+{"text": "place the selected objects closer to the right wall", "gold_command": {"intent": "PlaceObject", "args": {"target": "selection", "use_selection": true, "side": "right", "distance_m": 0.5}}}
+{"text": "place a row of trees along the right side of the fence", "gold_command": {"intent": "PlaceObject", "args": {"category": "tree", "quantity": 4, "reference": "fence_1", "relation": "right_of", "side": "right", "distance_m": 2.0}}}
+{"text": "extend the main road forward by three more meters", "gold_command": {"intent": "PlaceObject", "args": {"category": "road_segment", "reference": "road_segment_1", "relation": "extend_forward", "distance_m": 3.0}}}
+
+{"text": "rotate the desk slightly counterclockwise by fifteen degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "desk_1", "yaw_deg": -15}}}
+{"text": "rotate the table so it faces the room center", "gold_command": {"intent": "RotateObject", "args": {"target": "table_1", "orientation_mode": "face_reference", "reference": "room_center"}}}
+{"text": "rotate all selected trees randomly by thirty degrees", "gold_command": {"intent": "RotateObject", "args": {"target": "selection", "use_selection": true, "yaw_deg": 30}}}
+{"text": "rotate the road segment so it lines up with the fence", "gold_command": {"intent": "RotateObject", "args": {"target": "road_segment_1", "yaw_deg": 0}}}
+
+{"text": "slightly enlarge all selected furniture, scale one point one", "gold_command": {"intent": "ResizeObject", "args": {"target": "selection", "use_selection": true, "size_scale": 1.1}}}
+{"text": "make the current table a bit smaller, scale zero point eight five", "gold_command": {"intent": "ResizeObject", "args": {"target": "table_1", "size_scale": 0.85}}}
+{"text": "increase the size of the trees to one point three", "gold_command": {"intent": "ResizeObject", "args": {"target": "tree_1", "size_scale": 1.3}}}
+{"text": "reduce the fence height slightly, scale zero point nine two", "gold_command": {"intent": "ResizeObject", "args": {"target": "fence_1", "size_scale": 0.92}}}
+
+{"text": "delete all selected decorations", "gold_command": {"intent": "DeleteObject", "args": {"target": "selection", "use_selection": true}}}
+{"text": "remove the current plant from the scene", "gold_command": {"intent": "DeleteObject", "args": {"target": "plant_1"}}}
+{"text": "delete the tree closest to the house", "gold_command": {"intent": "DeleteObject", "args": {"target": "tree_1"}}}
+{"text": "remove the fence in front of the road", "gold_command": {"intent": "DeleteObject", "args": {"target": "fence_1"}}}
+
+{"text": "set the wall material to warm beige paint", "gold_command": {"intent": "SetMaterial", "args": {"target": "walls", "material": "Paint.BeigeWarm"}}}
+{"text": "change the floor material to light oak wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "floor", "material": "Wood.OakLight"}}}
+{"text": "set the desk material to dark walnut", "gold_command": {"intent": "SetMaterial", "args": {"target": "desk_1", "material": "Wood.WalnutDark"}}}
+{"text": "change the fence material to white painted wood", "gold_command": {"intent": "SetMaterial", "args": {"target": "fence_1", "material": "Wood.WhitePaint"}}}
+{"text": "set the road material to medium gray asphalt", "gold_command": {"intent": "SetMaterial", "args": {"target": "road_segment_1", "material": "Asphalt.MidGray"}}}

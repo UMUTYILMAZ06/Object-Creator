@@ -1,0 +1,23 @@
+{
+  "label_list": [
+    "O",
+    "B-MOVED",
+    "I-MOVED",
+    "B-REF",
+    "I-REF"
+  ],
+  "label2id": {
+    "O": 0,
+    "B-MOVED": 1,
+    "I-MOVED": 2,
+    "B-REF": 3,
+    "I-REF": 4
+  },
+  "id2label": {
+    "0": "O",
+    "1": "B-MOVED",
+    "2": "I-MOVED",
+    "3": "B-REF",
+    "4": "I-REF"
+  }
+}

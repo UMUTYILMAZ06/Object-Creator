@@ -1,0 +1,48 @@
+{
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "dtype": "float32",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "supports_on_top",
+    "1": "can_be_placed_on",
+    "2": "is_container_openable",
+    "3": "has_interior_volume",
+    "4": "can_go_under",
+    "5": "can_be_under",
+    "6": "is_wall_mounted",
+    "7": "is_floor_object",
+    "8": "is_hanging_object"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "can_be_placed_on": 1,
+    "can_be_under": 5,
+    "can_go_under": 4,
+    "has_interior_volume": 3,
+    "is_container_openable": 2,
+    "is_floor_object": 7,
+    "is_hanging_object": 8,
+    "is_wall_mounted": 6,
+    "supports_on_top": 0
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "problem_type": "multi_label_classification",
+  "transformers_version": "4.57.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
